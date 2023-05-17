@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    font-family: "Montsterrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+.brand-logo {
+    margin: 1rem;
+    margin-left: 5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+
+
+    text-align: center;
+
+}
+
+
+
+.fa-facebook {
+    background-color: #4267B2;
+    color: white;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #ffc900;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: whitesmoke;
+}
+
+.phone-number:hover {
+    background-color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #555;
+    border-radius: 10px;
+
+}
+
+@media(max-width:600px) {
+    .toggle-button {
+        display: flex;
+
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .brand-logo {
+        margin-left: .5rem;
+    }
+
+
+}
+
+/*
+li,
+a {
+    font-family: "Montsterrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #d5ad18;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eaeaea;
+
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin-left: 200px;
+}
+
+.nav-links {
+    list-style: none;
+    margin-right: 200px;
+}
+
+.nav-links li {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.links:hover {
+    color: #ffc900;
+    font-size: 25px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+
+}
+
+.fa:hover {
+    color: white;
+    font-size: 32px;
+    width: 61px;
+}
+
+.fa-facebook {
+    background-color: #4267B2;
+    color: white;
+}
+*/
+
+/* index main page*/
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* contact page*/
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.contact {
+    text-align: center;
+    font-size: 55px;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 15 rgba(0, 0, 0, 0.1);
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #ffc900;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #4267B2;
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        flex-wrap: wrap;
+    }
+}
