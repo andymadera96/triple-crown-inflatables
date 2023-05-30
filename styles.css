@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(#fffaa7, #fbac08);
+    background-image: linear-gradient(to right,#fffaa7, #fbac08);
 }
 
 .logo {
