@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right,#fffaa7, #fbac08);
+    background-image: linear-gradient(to right, #fffaa7, #fbac08);
 }
 
 .logo {
@@ -55,7 +55,7 @@ body {
 
 }
 
-.fa-facebook {
+.fa-facebook-f {
     background-color: #4267B2;
     color: white;
 }
@@ -94,6 +94,180 @@ body {
 
 }
 
+/* images on index page*/
+.container {
+    padding: 2rem;
+
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    display: flex;
+    aspect-ratio: 3/2;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.column::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail {
+    display: flex;
+    aspect-ratio: 3/2;
+    max-width: 10rem;
+    object-fit: fill;
+    float: left;
+    border: #555 solid;
+
+}
+
+.row {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    border: 1px solid #777;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: pink;
+
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    max-width: 50rem;
+
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides,
+.myPurpleSlides,
+.myUsaSlides,
+.myFunSlides,
+.myBlueSlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: grey;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* description text */
+.desc {
+    font-size: 30px;
+    background-color: pink;
+    text-align: center;
+    padding: 15px;
+
+}
+
+img.demo,
+img.demoPurple,
+img.demoBlue,
+img.demoUsa,
+img.demoFun {
+    opacity: 0.6;
+}
+
+
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.active,
+.demoPurple:hover,
+.demoFun:hover,
+.demoUsa:hover,
+.demoBlue:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*responsive webpage css*/
 @media(max-width:600px) {
     .toggle-button {
         display: flex;
@@ -131,180 +305,8 @@ body {
         margin-left: .5rem;
     }
 
-
-}
-
-/* image gallery*/
-/* Position the image container (needed to position the left and right arrows) */
-img {
-    vertical-align: middle;
-
-}
-
-.container {
-    position: relative;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 18px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 15px;
-    border-radius: 1px 0 0 1px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: grey;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
-/* index main page*/
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-}
-
-.gallery img {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* contact page*/
-.contact-page {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.contact {
-    text-align: center;
-    font-size: 55px;
-}
-
-.container {
-    position: relative;
-    max-width: 700px;
-    width: 100%;
-    background: white;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 15 rgba(0, 0, 0, 0.1);
-}
-
-.form .input-box {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.input-box label {
-    color: #ffc900;
-}
-
-.form .input-box input {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    outline: none;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-}
-
-.form button {
-    height: 55px;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 400;
-    margin-top: 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    background-color: #4267B2;
-}
-
-@media screen and (max-width: 500px) {
-    .form {
-        flex-wrap: wrap;
+    .thumbnail {
+        max-width: 8rem;
     }
+
 }
