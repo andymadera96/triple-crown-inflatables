@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/star.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <script src="script.js" defer></script>
     <title>Triple Crown Inflatables</title>
 </head>
@@ -26,85 +26,215 @@
                 <li><a href="#" class="links">ABOUT</a></li>
                 <li><a href="contact.html" class="links">CONTACT</a></li>
                 <li><a href="#" class="links">FAQ</a></li>
-                <li><a href="https://www.facebook.com/tim.war.3348" class="fa fa-facebook" style="color: white;"></a>
+                <li><a href="https://www.facebook.com/profile.php?id=100091838080658" class="fa-brands fa-facebook-f"
+                        style="color: white;"></a>
                 </li>
                 <li><a class="phone-number">806-893-0358</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-            <div class="numbertext">1 / 7</div>
-            <img src="images/IMG_0202.jpeg" style="width:100%">
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">2 / 7</div>
-            <img src="images/IMG_0209.jpeg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">3 / 7</div>
-            <img src="images/IMG_0212.jpeg" style="width:100%">
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">4 / 7</div>
-            <img src="images/IMG_0207.jpeg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">5 / 7</div>
-            <img src="images/bh6.jpg" style="width:100%">
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">6 / 7</div>
-            <img src="images/bh3.jpg" style="width:100%">
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">7 / 7</div>
-            <img src="images/IMG_0204.jpeg" style="width:100%">
-        </div>
-
-
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Image text -->
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-        <!-- Thumbnail images -->
+    <section class="container">
         <div class="row">
             <div class="column">
-                <img class="demo cursor" src="images/IMG_0202.jpeg" style="width:100%" onclick="currentSlide(1)">
+                <img src="images/IMG_0212.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
             </div>
-            <div class="column">
-                <img class="demo cursor" src="images/IMG_0209.jpeg" style="width:100%" onclick="currentSlide(2)">
+            <div class="desc">USA Combo<br>27' L x 12'W x 18' H 350lbs
             </div>
-            <div class="column">
-                <img class="demo cursor" src="images/IMG_0212.jpeg" style="width:100%" onclick="currentSlide(3)">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="images/IMG_0207.jpeg" style="width:100%" onclick="currentSlide(4)">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="images/bh6.jpg" style="width:100%" onclick="currentSlide(5)">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="images/bh3.jpg" style="width:100%" onclick="currentSlide(6)">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="images/IMG_0204.jpeg" style="width:100%" onclick="currentSlide(7)">
-            </div>
-
         </div>
-    </div>
 
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
 
+                <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/IMG_0212.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/IMG_0207.jpeg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Thumbnail image controls -->
+                <div class="thumbnail">
+                    <img class="demo" src="images/IMG_0212.jpeg" onclick="currentSlide(1)" alt="" style="width:100%;">
+                </div>
+
+                <div class="thumbnail">
+                    <img class="demo" src="images/IMG_0207.jpeg" onclick="currentSlide(2)" alt="" style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Purple inflatable -->
+    <section class="container">
+        <div class="row">
+            <div class="column">
+                <img src="images/IMG_0301.jpg" onclick="openPurple();currentSlidePurple(1)" class="hover-shadow"
+                    style="width: 100%; object-fit:cover;">
+            </div>
+            <div class="desc">purple
+            </div>
+        </div>
+        <div id="purple" class="modal">
+            <span class="close cursor" onclick="closePurple()">&times;</span>
+            <div class="modal-content">
+
+                <div class="myPurpleSlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/IMG_0301.jpg" style="width:100%">
+                </div>
+
+                <div class="myPurpleSlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/IMG_0305.jpg" style="width:100%">
+                </div>
+                <div class="myPurpleSlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/IMG_0306.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlidesPurple(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesPurple(1)">&#10095;</a>
+
+                <!-- Thumbnail image controls -->
+                <div class="thumbnail">
+                    <img class="demoPurple" src="images/IMG_0301.jpg" onclick="currentSlidePurple(1)" alt=""
+                        style="width: 100%;">
+                </div>
+
+                <div class="thumbnail">
+                    <img class="demoPurple" src="images/IMG_0305.jpg" onclick="currentSlidePurple(2)" alt=""
+                        style="width:100%;">
+                </div>
+                <div class="thumbnail">
+                    <img class="demoPurple" src="images/IMG_0306.jpg" onclick="currentSlidePurple(3)" alt=""
+                        style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blue inflatable -->
+    <section class="container">
+        <div class="row">
+            <div class="column">
+                <img src="images/IMG_0202.jpeg" onclick="openBlue();currentSlideBlue(1)" class="hover-shadow"
+                    style="width: 100%; object-fit:cover;">
+            </div>
+            <div class="desc">Blue
+            </div>
+        </div>
+        <div id="blue" class="modal">
+            <span class="close cursor" onclick="closeBlue()">&times;</span>
+            <div class="modal-content">
+
+                <div class="myBlueSlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/IMG_0202.jpeg" style="width:100%">
+                </div>
+
+                <div class="myBlueSlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/IMG_0209.jpeg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlidesBlue(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesBlue(1)">&#10095;</a>
+
+                <!-- Thumbnail image controls -->
+                <div class="thumbnail">
+                    <img class="demoBlue" src="images/IMG_0301.jpg" onclick="currentSlideBlue(1)" alt=""
+                        style="width: 100%;">
+                </div>
+
+                <div class="thumbnail">
+                    <img class="demoBlue" src="images/IMG_0209.jpeg" onclick="currentSlideBlue(2)" alt=""
+                        style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fun inflatable -->
+    <section class="container">
+        <div class="row">
+            <div class="column">
+                <img src="images/IMG_0302.jpg" onclick="openFun();currentSlideFun(1)" class="hover-shadow"
+                    style="width: 100%; object-fit:cover;">
+            </div>
+            <div class="desc">Fun Slide
+            </div>
+        </div>
+        <div id="fun" class="modal">
+            <span class="close cursor" onclick="closeFun()">&times;</span>
+            <div class="modal-content">
+
+                <div class="myFunSlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/IMG_0302.jpg" style="width:100%">
+                </div>
+
+                <div class="myFunSlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/IMG_0303.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlidesFun(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesFun(1)">&#10095;</a>
+
+                <!-- Thumbnail image controls -->
+                <div class="thumbnail">
+                    <img class="demoFun" src="images/IMG_0302.jpg" onclick="currentSlideFun(1)" alt=""
+                        style="width: 100%;">
+                </div>
+
+                <div class="thumbnail">
+                    <img class="demoFun" src="images/IMG_0303.jpg" onclick="currentSlideFun(2)" alt=""
+                        style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- usa inflatable -->
+    <section class="container">
+        <div class="row">
+            <div class="column">
+                <img src="images/IMG_0203.jpg" onclick="openUsa();currentSlideUsa(1)" class="hover-shadow"
+                    style="width: 100%; object-fit:cover;">
+            </div>
+            <div class="desc">Texas Slide
+            </div>
+        </div>
+        <div id="usa" class="modal">
+            <span class="close cursor" onclick="closeUsa()">&times;</span>
+            <div class="modal-content">
+
+                <div class="myUsaSlides">
+                    <div class="numbertext">1 / 1</div>
+                    <img src="images/IMG_0203.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlidesUsa(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesUsa(1)">&#10095;</a>
+
+                <!-- Thumbnail image controls -->
+                <div class="thumbnail">
+                    <img class="demoUsa" src="images/IMG_0203.jpg" onclick="currentSlideFun(1)" alt=""
+                        style="width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
