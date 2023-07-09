@@ -12,6 +12,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #fffaa7, #fbac08);
+
+
 }
 
 .logo {
@@ -148,7 +150,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: pink;
+    background-color: #6894d3;
 
 }
 
@@ -229,7 +231,7 @@ body {
 /* description text */
 .desc {
     font-size: 30px;
-    background-color: pink;
+    background-color: #6894d3;
     text-align: center;
     padding: 15px;
 
@@ -266,6 +268,91 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* contact page*/
+
+
+.container {
+
+    background-color: white;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+
+.contact {
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: black;
+    font-weight: bold;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #6894d3;
+}
+
+.form button:hover {
+    background: #2855b2;
+}
 
 /*responsive webpage css*/
 @media(max-width:600px) {
@@ -309,4 +396,7 @@ img.hover-shadow {
         max-width: 8rem;
     }
 
+    .container {
+        width: 90%;
+    }
 }
